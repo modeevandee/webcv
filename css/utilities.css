@@ -1,4 +1,7 @@
 /* Utilities */
+.centre-text {
+  text-align: center;
+}
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -60,3 +63,5 @@
     align-items: center;
     height: 100%;
   }
+
+  

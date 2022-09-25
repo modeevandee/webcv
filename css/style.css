@@ -128,8 +128,11 @@ img {
   outline: none;
 }
 
+/* showcase skills carousel */
+.gallery {
+  background: #EEE;
+}
 /* Showcase Skills */
-
 .showcase-skills .flex {
   flex-wrap: wrap;
 }
@@ -162,8 +165,16 @@ img {
   min-height: 150px;
 }
 
-.showcase-skills .card.flex {
-  border-color: 1px solid  red;
+.showcase-skills .card.flex:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.showcase-skills .clickable-cards .card.flex:hover {
+  border: 1px solid var(--primarycolor);
+}
+
+.clickable-cards {
+  text-decoration: none;
 }
 
 /* Media Querys */

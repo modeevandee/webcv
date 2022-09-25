@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <link rel="stylesheet" href="css/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilities.css">
     <title>Modee's Site</title>
@@ -38,84 +40,67 @@
         </div>
     </section>
     <section class="showcase-skills">
-        <div class="container">
-            <div class="background-h2">
-                <h2 class="centre-text mt"> Programming / Scripting </h2>
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="container carousell-cell">
+                <div class="background-h2">
+                    <h2 class="centre-text mt"> Programming / Scripting </h2>
+                </div>
+                <div class="container flex">
+                    <div class="card flex">
+                        <img src="images/logos/python.png" alt="python Programming language logo">
+                        <p>Python</p>
+                    </div>
+                    <div class="card flex">
+                        <img src="images/logos/php.png" alt="php Programming language logo">
+                        <p>PHP</p>
+                    </div>
+                    <div class="card flex">
+                        <img src="images/logos/cprog.png" alt="C Programming language logo">
+                        <p>C</p>
+                    </div>
+                    <div class="card flex">
+                        <img src="images/logos/java.png" alt="Java Programming language logo">
+                        <p>Java</p>
+                    </div>
+                    <div class="card flex">
+                        <img src="images/logos/sql.png" alt="SQL Programming language logo">
+                        <p>SQL</p>
+                    </div>
+                    <div class="card flex">
+                        <img src="images/logos/kotlin.png" alt="Kotlin Programming language logo">
+                        <p>Kotlin</p>
+                    </div>
+                    <div class="card flex">
+                        <img src="images/logos/javascript.png" alt="Javascript Programming language logo">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="card flex">
+                        <img src="images/logos/autoit.png" alt="AutoIT Programming language logo">
+                        <p>AutoIT</p>
+                    </div>
+                </div>
             </div>
-            <div class="container flex">
-                <div class="card flex">
-                    <img src="images/logos/python.png" alt="python language logo">
-                    <p>Python</p>
+            <div class="container carousell-cell">
+                <div class="background-h2">
+                    <h2 class="centre-text mt"> Security Analytics </h2>
                 </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="background-h2">
-                <h2 class="centre-text mt"> Programming / Scripting </h2>
-            </div>
-            <div class="container flex">
-                <div class="card flex">
-                    <img src="images/logos/python.png" alt="python language logo">
-                    <p>Python</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
-                </div>
-                <div class="card flex">
-                    <img src="images/logos/php.png" alt="php language logo">
-                    <p>PHP</p>
+                <div class="container flex">
+                    <a href="projects.html#security-analytics" class="clickable-cards">
+                        <div class="card flex">
+                            <img src="images/logos/splunk.png" alt="python language logo">
+                            <p>Splunk</p>
+                        </div>
+                    </a>
+                    <div class="card flex">
+                        <img src="images/logos/php.png" alt="php language logo">
+                        <p>PHP</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+    <script src="js/flickity.pkgd.js"></script>
 </body>
 </html>

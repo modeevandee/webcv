@@ -166,15 +166,30 @@ img {
 }
 
 .showcase-skills .card.flex:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+  transform: scale(0.98);
 }
 .showcase-skills .clickable-cards .card.flex:hover {
   border: 1px solid var(--primarycolor);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .clickable-cards {
   text-decoration: none;
+}
+
+/* Projects.html */
+.project-nav {
+  background-color: var(--prmarycolor);
+  min-height: 40px;
+}
+
+.project-nav .card {
+  background-color: var(--prmarycolor);
+  min-height: 1rem;
+  max-width: 1000px;
+  width: auto;
+  overflow-wrap: anywhere;
 }
 
 /* Media Querys */

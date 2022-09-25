@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilities.css">
     <title>Modee's Site</title>
@@ -32,12 +33,14 @@
             
             <div class="showcase-text">
                 <h1>Projects</h1>
-                <p>Hi! I am a Technology and Cyber Security enthusiast in my Final Year of University. In my free time I actively hone either my web development skills by learning web technologies, or Cyber Security by doing TryHackMe rooms or HackTheBox CTFs.<br><br> Do explore the site for more on me and projects that I have done.</p>
-                <ul>
-                    <li><a href="#programming">programming</a></li>
-                    <li><a href="#security-analytics">security-analytics</a></li>
-                </ul>    
+                <p>Hi! I am a Technology and Cyber Security enthusiast in my Final Year of University. In my free time I actively hone either my web development skills by learning web technologies, or Cyber Security by doing TryHackMe rooms or HackTheBox CTFs.<br><br> Do explore the site for more on me and projects that I have done.</p> 
             </div>
+        </div>
+        <div class="project-nav" >
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="card carousell-cell"><a href="#programming">programming</a></div>
+                <div class="card carousell-cell"><a href="#security-analytics">security-analytics</a></div>
+            </div>  
         </div>
     </section>
 
@@ -52,6 +55,7 @@
             <h2>sec Analytics</h2>     
         </div>
     </section>
-
+    
+    <script src="js/flickity.pkgd.js"></script>
 </body>
 </html>

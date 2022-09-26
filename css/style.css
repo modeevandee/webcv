@@ -2,6 +2,7 @@
 
 :root {
   --primarycolor: #047aed;
+  --secondarycolor: azure;
 }
 
 * {
@@ -84,7 +85,8 @@ img {
   max-width: 100%;
   min-height: 50px;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .showcase h1 {
@@ -132,7 +134,18 @@ img {
 .gallery {
   background: #EEE;
 }
+.showcase-skills .background-color-secondary.showcase-text {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 0;
+  padding-top: 10px;
+  text-decoration: underline;
+}
 /* Showcase Skills */
+.background-color-secondary {
+  background-color: var(--secondarycolor);
+}
+
 .showcase-skills .flex {
   flex-wrap: wrap;
 }
@@ -203,11 +216,6 @@ img {
   .showcase {
     min-height: 100px;
     height: auto;
-  }
-
-  .showcase-text {
-    text-align: center;
-    margin-top: 10px;
   }
 
   .img-container-primary img {

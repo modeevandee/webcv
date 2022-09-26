@@ -70,7 +70,7 @@ img {
 }
 
 /* Showcase */
-.showcase, showcase-skills{
+.showcase, .showcase-projects{
   min-height: 400px;
   /* height: 400px; */
   background-color: var(--primarycolor);
@@ -141,6 +141,7 @@ img {
   padding-top: 10px;
   text-decoration: underline;
 }
+
 /* Showcase Skills */
 .background-color-secondary {
   background-color: var(--secondarycolor);
@@ -205,6 +206,18 @@ img {
   overflow-wrap: anywhere;
 }
 
+/* .showcase-projects */
+.showcase-projects {
+  min-height: 280px;
+}
+.showcase-projects .container.grid {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.showcase-projects .showcase-text {
+  grid-column: 2 / 3;
+}
 /* Media Querys */
 @media(max-width: 768px) {
   .grid,

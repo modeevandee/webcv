@@ -40,6 +40,7 @@ h1, h2 {
   font-weight: 300; 
   line-height: 1.2;
   margin: 10px 0;
+  font-weight: bolder;
 }
 
 img {
@@ -58,6 +59,14 @@ img {
 
 .navbar ul {
   display: flex;
+}
+
+.projects-body {
+  background: url(../images/computer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .navbar a, .showcase-footer .footer-nav a,
@@ -290,10 +299,33 @@ img {
 }
 
 /* showcase-skills-section */
+.showcase-skills-section .grid img{
+  border: 1px solid black;
+}
 .showcase-skills-section .container {
   min-height: 500px;
   margin: 20px auto;
 }
+.h2-project-background h2 {
+  background-color: red;
+  width: auto;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: #fff;
+}
+/* .java-project {
+  text-align: center;
+  background: url(../images/computer.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  /* border: 1px solid red; */
+} */
+
+.showcase-skills-section .java-project .java-project-text ul {
+  list-style: circle inside;
+}
+
 /* Media Querys */
 @media(max-width: 768px) {
   .grid,

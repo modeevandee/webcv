@@ -288,7 +288,7 @@ img {
 .showcase-footer .footer-nav a{
   padding: 0 0;
 }
-.social .fa-github,  .social .fa-linkedin{
+.social * {
   color: #fff;
 }
 .showcase-footer .social {
@@ -332,6 +332,7 @@ img {
   min-height: 500px;
   margin: 20px auto;
 }
+
 .h2-project-background h2 {
   display: flex;
   justify-content: center;

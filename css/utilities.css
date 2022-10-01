@@ -1,4 +1,9 @@
 /* Utilities */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .centre-text {
   text-align: center;
 }

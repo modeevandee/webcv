@@ -62,7 +62,7 @@ img {
 }
 
 .projects-body {
-  background: url(../images/computer.jpg);
+  background: url(../images/companela.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -70,10 +70,14 @@ img {
 }
 
 .navbar a, .showcase-footer .footer-nav a,
-.showcase-projects .grid a {
+.showcase-projects .project-nav a {
   color: white;
   padding: 10px;
   margin: 0 5px;
+}
+.showcase-projects .project-nav a {
+  margin: 10px 5px;
+  font-size: 1.5rem;
 }
 
 .navbar a:hover, .showcase-footer .footer-nav a {
@@ -84,18 +88,18 @@ img {
   border-bottom: 2px #fff solid;
 }
 
-.showcase-projects .grid .project-nav a:hover {
+.showcase-projects .project-nav a:hover {
   border-bottom: 2px #fff dashed;
   border-top: 2px #fff dashed;
   border-radius: 10px;
 }
 
-.showcase-projects .grid .project-nav a {
+.showcase-projects .project-nav a {
   border-left: 2px #fff dashed;
   border-radius: 10px;
 }
 
-.showcase-projects .grid .project-nav a {
+.showcase-projects .project-nav a {
   border-right: 2px #fff dashed;
   border-radius: 10px;
 }
@@ -249,12 +253,14 @@ img {
   font-size: 1.3rem;
 }
 
-.showcase-projects .showcase-text h1 {
+.showcase-projects .showcase-text .projectsheader {
+  justify-content: space-evenly;
   font-size: 5rem;
   text-transform: uppercase;
   background-color: #047fff;
   border: 1px solid var(--secondarycolor);
-  border-radius: 50%;
+  margin-bottom: 50px;
+  /* border-radius: 50%; */
 }
 
 .showcase-projects .showcase-text,
@@ -263,7 +269,7 @@ img {
 }
 
 .showcase-projects .project-nav {
-
+  flex-wrap: wrap;
 }
 
 /* showcase-footer */
@@ -299,6 +305,20 @@ img {
 }
 
 /* showcase-skills-section */
+.showcase-skills-section h3 {
+  color: var(--primarycolor);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.showcase-skills-section .container{
+  border: 2px dashed var(--thirdcolor);
+}
+.showcase-skills-section .java-project .java-project-text ul {
+  list-style: circle inside;
+}
+.showcase-skills-section .container.flex {
+  flex-direction: column;
+}
 .showcase-skills-section .grid img{
   border: 1px solid black;
 }
@@ -307,11 +327,18 @@ img {
   margin: 20px auto;
 }
 .h2-project-background h2 {
-  background-color: red;
-  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: var(--primarycolor);
+  border: 1px solid var(--primarycolor);
+  border-radius: 10px;
+  max-width: auto;
   font-size: 2rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #fff;
+  padding: 20px;
 }
 /* .java-project {
   text-align: center;
@@ -319,14 +346,19 @@ img {
   background-size: contain;
   background-repeat: repeat;
   background-position: center;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 } */
 
-.showcase-skills-section .java-project .java-project-text ul {
-  list-style: circle inside;
-}
-
 /* Media Querys */
+@media(max-width: 1100px) {
+  * {
+    font: 1px;
+  }
+  .showcase-skills-section .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
 @media(max-width: 768px) {
   .grid,
   .showcase .grid {
@@ -342,6 +374,9 @@ img {
   .img-container-primary img {
     max-width: 100%;
     height: auto;
+  }
+  .showcase-projects .showcase-text .projectsheader {
+    font-size: 3rem;
   }
 
   /* showcase-skills programming
@@ -362,6 +397,10 @@ img {
   .navbar ul {
     padding: 10px;
     background-color: rgba(0,0,0,0.1);
+  }
+
+  .showcase-projects .showcase-text .projectsheader {
+    font-size: 2.5rem;
   }
 
    /* showcase-skills programming

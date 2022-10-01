@@ -305,6 +305,12 @@ img {
 }
 
 /* showcase-skills-section */
+.showcase-skills-section .project {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  border: 2px dashed var(--primarycolor);
+  padding: 50px;
+}
 .showcase-skills-section h3 {
   color: var(--primarycolor);
   font-weight: bold;
@@ -313,7 +319,7 @@ img {
 .showcase-skills-section .container{
   border: 2px dashed var(--thirdcolor);
 }
-.showcase-skills-section .java-project .java-project-text ul {
+.showcase-skills-section .project .project-text ul {
   list-style: circle inside;
 }
 .showcase-skills-section .container.flex {

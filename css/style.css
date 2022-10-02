@@ -55,6 +55,7 @@ img {
 
 .navbar .flex {
   justify-content: space-between;
+  padding: 10px;
 }
 
 .navbar ul {

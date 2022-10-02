@@ -43,6 +43,25 @@
     padding: 20px;
     margin: 10px auto;
   }
+  #totopbtn {
+    display: none;
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: 1px solid white; 
+    outline: none; 
+    background-color: var(--primarycolor); 
+    color: white; 
+    cursor: pointer; 
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 18px;  
+  }
+  
+  #totopbtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 
   .btn {
     display: inline-block;
@@ -51,7 +70,7 @@
     background: var(--primarycolor);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
   }
   
   .btn-outline {

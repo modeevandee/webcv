@@ -77,12 +77,8 @@ img {
   margin: 0 5px;
 }
 .showcase-projects .project-nav a {
-  margin: 10px 5px;
+  margin: 20px 20px;
   font-size: 1.5rem;
-}
-
-.navbar a:hover, .showcase-footer .footer-nav a {
-  
 }
 
 .navbar a:hover, .showcase-footer .footer-nav a:hover {
@@ -90,18 +86,17 @@ img {
 }
 
 .showcase-projects .project-nav a:hover {
-  border-bottom: 2px #fff dashed;
-  border-top: 2px #fff dashed;
+  box-shadow: 0 0 0 1px #fff;
   border-radius: 10px;
 }
 
-.showcase-projects .project-nav a {
-  border-left: 2px #fff dashed;
+/* .showcase-projects .project-nav a {
+  box-shadow: 1px 0 0 0 #fff;
   border-radius: 10px;
-}
+} */
 
 .showcase-projects .project-nav a {
-  border-right: 2px #fff dashed;
+  box-shadow: -1px 0 0 0 #fff, 1px 0 0 0 #fff;
   border-radius: 10px;
 }
 /* Showcase */
